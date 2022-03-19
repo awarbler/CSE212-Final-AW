@@ -1,6 +1,10 @@
 # Queues
 
+A Queue is a type of data structure that is a collection of entities. It follows a linear operation. For example, a queue data structure follows the operation of first-in, first-out, or FIFO. The first data is stored first, and data will be the first to get deleted. For example, renew a driver's license, go to the Department of motor vehicles; take a number, if the line is empty, the number will be first or put at the end of the line, the first number goes first, and the last number is the last to be served. Queues are used in everyday transactions such as grocery store lines, point of sales, printer queues, and call centers.
+
 ## Types
+
+There are four types of queues Simple Queue, Circular Queues, Priority Queues, and Double Queues. Table 1.1 below explains the differences between the four queues.
 
 |     Type    |     Description     |
 |---|---|
@@ -25,6 +29,7 @@ A conditional in Python is written using the `if`statement.  In the example belo
          print("Watch for ice!")
 
 ```
+
 In Python, we use the colon (`:`) to indicate the beginning of a block of code.  In this case, the block of code that displays the message will only occur the the condition is True.  The condition `temp <= 32.0` is called a boolean expression.  A boolean expression will also result in a True or a False.  If the boolean expression is True, then code in the block will run.
 
 ## Boolean Expressions
