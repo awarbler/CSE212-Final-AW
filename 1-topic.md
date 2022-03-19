@@ -1,5 +1,13 @@
 # Queues
 
+## Types
+
+|     Type    |     Description     |
+|---|---|
+|     Simple Queue    |     Insert in the rear removal in the front. A simple queue does not have a capacity.    |
+|     Circular Queue    |     The last element points to the first element making a circle. A circular queue has a capacity—a circular queue, otherwise known as a linked list.    |
+|     Priority Queue    |     Each element is associated with a priority and served by its priority    |
+|     Double Queue    |     Insert and remove may occur from either the front or last.    |
 
 Software would be very boring if we didn't have the ability to make choices.  Imagine you had a game app on your phone that didn't allow you to make any choices:
 
@@ -11,14 +19,12 @@ Software would be very boring if we didn't have the ability to make choices.  Im
 - In reality, the game would always run the exact same way regardless of what you tried to do
 
 A conditional in Python is written using the `if`statement.  In the example below, a message is displayed if the temperature is below freezing (using units of Fahrenheit):
-```python
 
-
+```
   if temp <= 32.0:
          print("Watch for ice!")
+
 ```
-
-
 In Python, we use the colon (`:`) to indicate the beginning of a block of code.  In this case, the block of code that displays the message will only occur the the condition is True.  The condition `temp <= 32.0` is called a boolean expression.  A boolean expression will also result in a True or a False.  If the boolean expression is True, then code in the block will run.
 
 ## Boolean Expressions
