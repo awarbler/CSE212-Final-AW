@@ -1,6 +1,12 @@
 # Python - Programming with Data Structure Tutorial
 
-Welcome to the Python Data Structure Tutorial. This is a simple data structure tutorial.  Every beginning Python programmer should understand these basic topics:
+Welcome to the Python Data Structure Tutorial.
+
+Prerequisites  :
+
+- Programming with Classes
+
+This is a simple data structure tutorial.  Every beginning Python programmer should understand these basic topics:
 
 - [Queue](1-topic.md)
 - [Linked List](2-topic.md)
