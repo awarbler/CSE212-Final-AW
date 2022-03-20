@@ -49,13 +49,15 @@ Queue modules implement multiproduct, multicomputer queues. In table 2, are the 
 |     Delete()    |     The delete function allows us to delete the entire queue    |     queue.isEmpy()    |     O(1) – order of 1, remains constant, access a specific element    |
 |     Size()    |     Checks the size of the queue    |     len(queue) == size    |     O(1) – order of 1, remains constant, access a specific element    |
 
-## Example Methods
+## Example Queue without Capacity
 
-To use queue data structure we will need to set up a class called queue and methods. We are going to use a python list and it is important to set the capacity of a list to make the list time effecient.
+To use queue data structure we will need to set up a class called queue and methods. This examples uses a python list with no capacity.
 
 Here are the standard queue operations:
 
 1. Create a Queue
+
+    - Create a class hat calls parameter self
     - Initialize an empty python list
     - It is set to zero.
     - Insert as many elements that is needed
@@ -68,6 +70,7 @@ Here are the standard queue operations:
         ```
 
 2. Let's create a method that will help us run and print our test.
+    - Create a method that calls parameter self
     - Print out queue correctly
     - Time Complexity O(1)
 
@@ -78,6 +81,7 @@ Here are the standard queue operations:
     ```
 
 3. Create the isEmpty method
+    - Create a method that calls parameter self
     - The isEmpty method is used inside other methods to check elements.
     - In some cases, if the queue isEmpty there is no point in running the other methods.
     - Time Complexity O(1) checking one item
@@ -91,9 +95,10 @@ Here are the standard queue operations:
     ```
 
 4. Create an enqueue method
+    - Create a method that calls parameter self
     - The element will be assigned a location
     - The second element will be assigned a location after the first element in the queue.
-    - Time Complexity O(1)
+    - Time Complexity O(n)
 
     ``` python
         def enqueue(self, value):
@@ -103,7 +108,7 @@ Here are the standard queue operations:
 
 5. Create a dequeue method
     - Dequeue is used instead of the remove function.
-    - Call the isEmpty function 
+    - Call the isEmpty function
     - Dequeue will return the first element and will be removed.
     - It is best to add in an error if the queue is empty.
     - Time Complexity O(n)
@@ -161,9 +166,187 @@ Here are the standard queue operations:
         print(testQueue.dequeue())
         # call print function to see if item was dequeue
         print(testQueue)
-        # call peek method 
         
     ```
+
+## Example Queue with Capacity
+
+Using a python list with a set capacity is very similar to creating a python list without a set capacity.Set a class called queue and the same methods.
+
+1. Create a Circular Queue
+    - Create a blank list
+    - Set a fixed sizeMax to 6
+    - Create a start and set it to - 1
+    - Create a top variables set to -1
+
+    ```python
+    class Queue:
+        def __init__(self, maxSize):
+            self.items = maxSize * [None]
+            self.maxSize = maxSize
+            self.start = -1
+            self.top = -1
+    ```
+
+2. Create a method that will help us run and print our test.
+    - Print out queue correctly
+    - Time Complexity O(1)
+
+    ```python
+        def __str__(self):
+            values = [str(x) for x in self.items]
+            return ' '.join(values)
+    ```
+
+3. Create isFull Method
+    - Check if the queue is full
+    - Add a condition if the list is before the start no blank list
+    - Add a condition if the start is zero that means it is full
+    - We need to add one since or list starts at zero
+    - Return true otherwise false
+    - Time complexity is O(1)
+
+    ```python
+        def isFull(self):
+            if self.top + 1 == self.start:
+                return True
+            elif self.start == 0 and self.top + 1 == self.maxSize:
+                return True
+            else:
+                return False
+    ```
+
+4. Create isEmpty Method
+    - add a condition to check if it is negative 1
+    - Return True
+    - Returns False
+    - Time complexity O(1)
+
+    ```python
+
+        def isEmpty(self):
+            if self.top == -1:
+                return True
+            else:
+                return False
+    ```
+
+5. Create enqueue method
+    - Accept parameter of self and value
+    - Add a condition to call isFull()
+    - If full we cannot insert element
+    - If not Continue to insert element to queue
+    - Add a condition if top plus one equals maxSize
+    - Our top points to the last element
+    - Update to zero
+    - Otherwise add one to top to point to the next element
+    - If we are adding first element to an empty queue we need to update it to zero because the first elements index is zero
+    - if self starts equals minus one it means we are inserting the first element
+    - Set start to zero and add element to the list
+    - Update value of top
+    - Return saying the element has been inserted
+    - Time complexity is O(1)
+
+    ```python
+
+        def enqueue(self, value):
+            if self.isFull():
+            return "The queue is full"
+            else:
+                if self.top + 1 == self.maxSize:
+                    self.top = 0
+                else:
+                    self.top += 1
+                    if self.start == -1:
+                        self.start = 0
+                self.items[self.top] = value
+                return "The element is inserted at the end of Queue"
+        
+    ```
+
+6. Create dequeue method
+    - dequeue method will call parameter self
+    - Call isEmpty method
+    - If true return message
+    - add condition with a temp variable return items equals self.start
+    - Add a condition to check if start is equal to self start
+    - Set start and top property to minus one
+    - If this is the only element in the queue.
+    - Update the self start to minus one and self top to minus one because it is the last element in the queue
+    - The queue will be empty
+    - In else elif we need to point to the beginning of the list
+    - Set the self start plus one equals self maxSize
+    - In the else condition increase the self start every time by one
+    - At the end set self item start to none
+    - Return first element
+    - Time complexity o(1)
+
+    ```python
+        def dequeue(self):
+            if self.isEmpty():
+                    return "There is not any element in the Queue"
+                else:
+                    firstElement = self.items[self.start]
+                    start = self.start
+                    if self.start == self.top:
+                        self.start = -1
+                        self.top = -1
+                    elif self.start + 1 == self.maxSize:
+                        self.start = 0
+                    else:
+                        self.start += 1
+                    self.items[start] = None
+                    return firstElement
+
+    ```
+
+7. create peek method
+    - start property points to the first element
+    -
+
+    ```python
+        def peek(self):
+            if self.isEmpty():
+                return "There is not any element in the Queue"
+            else:
+                return self.items[self.start]
+
+    ```
+
+8. Delete Method
+    - Setting to none
+
+    ```python
+        def delete(self):
+            self.items = self.maxSize * [None]
+            self.top = -1
+            self.start = -1
+
+    ```
+
+9. Test Code
+    - write code to test methods
+
+    ```python
+    # assigne tQueue
+    tQueue = Queue(3)
+    # call isFull
+    print(tQueue.isFull())
+    # call isEmpty
+    print(tQueue.isEmpty())
+    # add data
+    tQueue.enqueue(1)
+    tQueue.enqueue(2)
+    tQueue.enqueue(3)
+    # print queue to see if enqueued
+    print(tQueue)
+    # call dequeue method
+    print(tQueue.dequeue())
+    
+    
+    ```
+
+## Problem
 
 You can check your code with the solution here: [Solution](1-topic-solution.py)
 
