@@ -59,6 +59,7 @@ Here are the standard queue operations:
     - Initialize an empty python list
     - It is set to zero.
     - Insert as many elements that is needed
+    - Time Complexity O(1)
 
         ``` python
         class Queue:
@@ -67,6 +68,8 @@ Here are the standard queue operations:
         ```
 
 2. Let's create a method that will help us run and print our test.
+    - Print out queue correctly
+    - Time Complexity O(1)
 
     ```python
         def __str__(self):
@@ -77,6 +80,7 @@ Here are the standard queue operations:
 3. Create the isEmpty method
     - The isEmpty method is used inside other methods to check elements.
     - In some cases, if the queue isEmpty there is no point in running the other methods.
+    - Time Complexity O(1) checking one item
 
      ``` python
         def isEmpty(self):
@@ -89,6 +93,7 @@ Here are the standard queue operations:
 4. Create an enqueue method
     - The element will be assigned a location
     - The second element will be assigned a location after the first element in the queue.
+    - Time Complexity O(1)
 
     ``` python
         def enqueue(self, value):
@@ -98,8 +103,10 @@ Here are the standard queue operations:
 
 5. Create a dequeue method
     - Dequeue is used instead of the remove function.
+    - Call the isEmpty function 
     - Dequeue will return the first element and will be removed.
     - It is best to add in an error if the queue is empty.
+    - Time Complexity O(n)
 
     ``` python
         def dequeue(self):
@@ -113,6 +120,7 @@ Here are the standard queue operations:
     - It is similar to the dequeue, except it will not be updated.
     - We are not removing the element.
     - Every time the same element will be returned.
+    - Time Complexity O(1)
 
     ```python
         def peek(self):
@@ -125,11 +133,37 @@ Here are the standard queue operations:
 7. Create delete method
     - The delete method will delete the entire queue.
     - This will set the queue to none.
+    - Time Complexity O(1)
 
     ```python
         def delete(self):
             self.items = None
     '''
+
+8. Test the queue
+    - Check if the method works
+    - Create a variable
+    - Print the value of the queue
+    - The method will return true, which means our queue is empty.
+    - Call all of our methods as a test.
+    - It is best to print out the queue for testing.
+
+    ```python
+        testQueue = Queue()
+        # call isEmpty method
+        print(testQueue.isEmpty())
+        # call enqueue method
+        testQueue.enqueue(1)
+        testQueue.enqueue(3)
+        testQueue.enqueue(4)
+        testQueue.enqueue(5)
+        # call dequeue method 
+        print(testQueue.dequeue())
+        # call print function to see if item was dequeue
+        print(testQueue)
+        # call peek method 
+        
+    ```
 
 You can check your code with the solution here: [Solution](1-topic-solution.py)
 
