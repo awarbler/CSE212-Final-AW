@@ -55,7 +55,9 @@ To use queue data structure we will need to set up a class called queue and meth
 
 Here are the standard queue operations:
 
-1. Create a Queue
+1. Create a Queue <details><summary>CLICK ME</summary>
+
+<p>
 
     - Create a class hat calls parameter self
     - Initialize an empty python list
@@ -68,7 +70,8 @@ Here are the standard queue operations:
             def __init__(self):
                 self.items = []
         ```
-
+</p>
+</details>
 2. Let's create a method that will help us run and print our test.
     - Create a method that calls parameter self
     - Print out queue correctly
