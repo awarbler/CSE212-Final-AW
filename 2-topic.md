@@ -14,8 +14,8 @@ Double linked list
 
 ```mermaid
   graph LR;
-      Data|Pointer-->Data|1234;
-      Data|1235-->Data|tail;
+      Data Pointer-->Data 1234;
+      Data 1235-->Data tail;
       C-->D;
 ```
 
