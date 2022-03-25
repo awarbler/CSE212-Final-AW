@@ -9,12 +9,14 @@ A linked list is a data structure collection of elements that is used in a queue
 Single linked list
 Double linked list
 
-## linked List structure
+## linked List structure      Data|Pointer --> Data|Pointer;
+      Data|Pointer --> Data|1234;
 
 ```mermaid
   graph LR;
-      Data|Pointer --> Data|Pointer ;
-      Data|Pointer --> Data|1234 ;
+      Data|Pointer-->Data|1234;
+      Data|1235-->Data|tail;
+      C-->D;
 ```
 
 ## Queue Terminology
