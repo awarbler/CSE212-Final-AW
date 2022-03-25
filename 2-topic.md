@@ -12,9 +12,9 @@ Double linked list
 ## linked List structure
 
 ```mermaid
-  graph TD;
-      A-->B;
-      B-->C;
+  graph LR;
+      Ab-->Bc;
+      Bc-->Cd;
       C-->D;
 ```
 
