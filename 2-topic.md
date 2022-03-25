@@ -13,7 +13,7 @@ Double linked list
 
 ```mermaid
   graph LR;
-      Ab-->Bc;
+      AbBc;
       Bc-->Cd;
       C-->D;
 ```
