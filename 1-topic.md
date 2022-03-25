@@ -8,7 +8,7 @@ In software engineering, we will need to use queues. We need to use a queue data
 
 ## Types
 
-There are four types of queues Simple Queue, Circular Queues, Priority Queues, and Double Queues. These different types of queues use python lists and linked lists. Table 1.1 below explains the differences between the four queues.
+There are four types of queues Simple Queue, Circular Queues, Priority Queues, and Double Queues. These different types of queues use python lists and linked lists. Table 1.1 below explains the differences between the four queues.[^1]
 
 |     Type    |     Description     |
 |:---|:---|
@@ -353,3 +353,7 @@ Food storage, which holds food storage for the Bishop Storehouse.  The food stor
 You can check your code with the solution here: [Solution](1-topic-solution.py)
 
 [Back to Welcome Page](0-welcome.md)
+
+### Footnotes
+
+[^1]: Queues (https://www.programiz.com/dsa/types-of-queue )
