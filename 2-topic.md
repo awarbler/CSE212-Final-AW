@@ -13,9 +13,9 @@ Double linked list
 
 ```mermaid
   graph LR;
-      AbBc;
-      Bc-->Cd;
-      C-->D;
+      Data| Pointer --> Data| Pointer ;
+      Data| Pointer --> Data| 1234 ;
+
 ```
 
 ## Queue Terminology
