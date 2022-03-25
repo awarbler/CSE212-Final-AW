@@ -13,9 +13,8 @@ Double linked list
 
 ```mermaid
   graph LR;
-      Data| Pointer --> Data| Pointer ;
-      Data| Pointer --> Data| 1234 ;
-
+      Data|Pointer --> Data|Pointer ;
+      Data|Pointer --> Data|1234 ;
 ```
 
 ## Queue Terminology
