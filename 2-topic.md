@@ -1,4 +1,4 @@
-## Linked List
+# Linked List
 
 A linked list is a data structure collection of elements that is used in a queue. A linked list is like a train it has many departments, it is linked to the next node. If we need to add to the train we can add in the beginning, the middle, or the end.
 
@@ -6,8 +6,8 @@ A linked list is a data structure collection of elements that is used in a queue
 
 ## Types
 
-Single linked list 
-Double linked list 
+Single linked list
+Double linked list
 
 ## linked List structure
 
