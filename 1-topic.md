@@ -1,5 +1,5 @@
 # Queues
-
+<!-- This content will not appear in the rendered Markdown -->
 A Queue is a type of data structure that is a collection of entities. It follows a linear operation. For example, a queue data structure follows the operation of first-in, first-out, or FIFO. The first data is stored first, and data will be the first to get deleted. For example, renew a driver's license, go to the Department of motor vehicles; take a number, if the line is empty, the number will be first or put at the end of the line, the first number goes first, and the last number is the last to be served.
 
 ## Purpose
@@ -46,7 +46,7 @@ Queue modules implement multiproduct, multicomputer queues. In table 2, are the 
 |     isFull()    |     These are used in circular queues. If a queue is set, isFull will check if the capacity is full. If it isFull(), we cannot add it to the queue     |     queue.isFull()    |     O(1) – order of 1, remains constant, access a specific element    |
 |     Front()    |     Returns the front item from the queue    |     queue.Front()    |     O(1) – order of 1, remains constant, access a specific element    |
 |     Rear()    |     Returns the back item from the queue.    |     queue.Rear()    |     O(1) – order of 1, remains constant, access a specific element    |
-|     Delete()    |     The delete function allows us to delete the entire queue    |     queue.isEmpy()    |     O(1) – order of 1, remains constant, access a specific element    |
+|     Delete()    |     The delete function allows us to delete the entire queue    |     queue.isEmpty()    |     O(1) – order of 1, remains constant, access a specific element    |
 |     Size()    |     Checks the size of the queue    |     len(queue) == size    |     O(1) – order of 1, remains constant, access a specific element    |
 
 ## Example Queue without Capacity
@@ -357,3 +357,16 @@ You can check your code with the solution here: [Solution](1-topic-solution.py)
 ### Footnotes
 
 [^1]: Queues (https://www.programiz.com/dsa/types-of-queue )
+
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].  
+
+You can also use words, to fit your writing style more closely[^note].
+
+1: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.  
+  This allows you to have a footnote with multiple lines.
+[^note]:
+    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+    This footnote also has been made with a different syntax using 4 spaces for new lines.

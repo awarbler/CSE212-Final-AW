@@ -11,6 +11,13 @@ Double linked list
 
 ## linked List structure
 
+```mermaid
+  graph TD;
+      A-->B;
+      B-->C;
+      C-->D;
+```
+
 ## Queue Terminology
 
 Table 1.2 explains the basic definitions for data structure and queues.
