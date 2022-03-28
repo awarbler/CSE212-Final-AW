@@ -53,12 +53,12 @@ Three steps to create a Single Linked list:
     - Create a blank Node and assign a value and reference with null
     - Link Head and tail with Node
 
-1. Create a linked list
-   - Create a class Single linked list(parameter of self)
-   - Create/ initialize head and tail with null/none references
-   - Create a node with null/none reference
-   - Create a pointer - this creates a link between the first Node and head.
-   - Time Complexity O(1)
+1.Create a linked list
+    - Create a class Single linked list(parameter of self)
+    - Create/ initialize head and tail with null/none references
+    - Create a node with null/none reference
+    - Create a pointer - this creates a link between the first Node and head.
+    - Time Complexity O(1)
 
 ``` python
         class SingleLinkList:
@@ -68,7 +68,7 @@ Three steps to create a Single Linked list:
      self.tail = None
  ```
 
-2. Create a class for nodes
+2.Create a class for nodes
     - initialize class Node
     - Set value and next
     - Time Complexity O(1)
@@ -81,7 +81,7 @@ Three steps to create a Single Linked list:
      self.next = None
 ```
 
-3. Create a linked list
+3.Create a linked list
     - Use singleLinkeList and Nodes class
     - Create two nodes
     - Link together
@@ -99,7 +99,7 @@ Three steps to create a Single Linked list:
 
 ```
 
-4. Create a method that will help us run and print our test.
+4.Create a method that will help us run and print our test.
     - Print out the queue correctly
     - Time Complexity O(1)
 
