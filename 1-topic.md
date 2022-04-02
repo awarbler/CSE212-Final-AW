@@ -55,9 +55,9 @@ To use queue data structure we will need to set up a class called queue and meth
 
 Here are the standard queue operations:
 
-1. Create a Queue
+1. Initialize a Queue
 
-    - Create a class hat calls parameter self
+    - Initialize a class hat calls parameter self
     - Initialize an empty python list
     - It is set to zero.
     - Insert as many elements that is needed
@@ -69,8 +69,8 @@ Here are the standard queue operations:
                 self.items = []
         ```
 
-2. Let's create a method that will help us run and print our test.
-    - Create a method that calls parameter self
+2. Let's Initialize a method that will help us run and print our test.
+    - Initialize a method that calls parameter self
     - Print out queue correctly
     - Time Complexity O(1)
 
@@ -80,8 +80,8 @@ Here are the standard queue operations:
             return ' '.join(values)
     ```
 
-3. Create the isEmpty method
-    - Create a method that calls parameter self
+3. Initialize the isEmpty method
+    - Initialize a method that calls parameter self
     - The isEmpty method is used inside other methods to check elements.
     - In some cases, if the queue isEmpty there is no point in running the other methods.
     - Time Complexity O(1) checking one item
@@ -94,8 +94,8 @@ Here are the standard queue operations:
                 return False
     ```
 
-4. Create an enqueue method
-    - Create a method that calls parameter self
+4. Initialize an enqueue method
+    - Initialize a method that calls parameter self
     - The element will be assigned a location
     - The second element will be assigned a location after the first element in the queue.
     - Time Complexity O(n)
@@ -106,7 +106,7 @@ Here are the standard queue operations:
             return "The element is inserted at the end of Queue"
     ```
 
-5. Create a dequeue method
+5. Initialize a dequeue method
     - Dequeue is used instead of the remove function.
     - Call the isEmpty function
     - Dequeue will return the first element and will be removed.
@@ -121,7 +121,7 @@ Here are the standard queue operations:
                 return self.items.pop(0)
     ```
 
-6. Create a peek method
+6. Initialize a peek method
     - It is similar to the dequeue, except it will not be updated.
     - We are not removing the element.
     - Every time the same element will be returned.
@@ -135,7 +135,7 @@ Here are the standard queue operations:
                 return self.items[0]
     ```
 
-7. Create delete method
+7. Initialize delete method
     - The delete method will delete the entire queue.
     - This will set the queue to none.
     - Time Complexity O(1)
@@ -147,7 +147,7 @@ Here are the standard queue operations:
 
 8. Test the queue
     - Check if the method works
-    - Create a variable
+    - Initialize a variable
     - Print the value of the queue
     - The method will return true, which means our queue is empty.
     - Call all of our methods as a test.
@@ -173,11 +173,11 @@ Here are the standard queue operations:
 
 Using a python list with a set capacity is very similar to creating a python list without a set capacity.Set a class called queue and the same methods.
 
-1. Create a Circular Queue
-    - Create a blank list
+1. Initialize a Circular Queue
+    - Initialize a blank list
     - Set a fixed sizeMax to 6
-    - Create a start and set it to - 1
-    - Create a top variables set to -1
+    - Initialize a start and set it to - 1
+    - Initialize a top variables set to -1
 
     ```python
     class Queue:
@@ -188,7 +188,7 @@ Using a python list with a set capacity is very similar to creating a python lis
             self.top = -1
     ```
 
-2. Create a method that will help us run and print our test.
+2. Initialize a method that will help us run and print our test.
     - Print out queue correctly
     - Time Complexity O(1)
 
@@ -198,7 +198,7 @@ Using a python list with a set capacity is very similar to creating a python lis
             return ' '.join(values)
     ```
 
-3. Create isFull Method
+3. Initialize isFull Method
     - Check if the queue is full
     - Add a condition if the list is before the start no blank list
     - Add a condition if the start is zero that means it is full
@@ -216,7 +216,7 @@ Using a python list with a set capacity is very similar to creating a python lis
                 return False
     ```
 
-4. Create isEmpty Method
+4. Initialize isEmpty Method
     - add a condition to check if it is negative 1
     - Return True
     - Returns False
@@ -231,7 +231,7 @@ Using a python list with a set capacity is very similar to creating a python lis
                 return False
     ```
 
-5. Create enqueue method
+5. Initialize enqueue method
     - Accept parameter of self and value
     - Add a condition to call isFull()
     - If full we cannot insert element
@@ -264,7 +264,7 @@ Using a python list with a set capacity is very similar to creating a python lis
         
     ```
 
-6. Create dequeue method
+6. Initialize dequeue method
     - dequeue method will call parameter self
     - Call isEmpty method
     - If true return message
@@ -300,7 +300,7 @@ Using a python list with a set capacity is very similar to creating a python lis
 
     ```
 
-7. create peek method
+7. Initialize peek method
     - start property points to the first element
     -
 
@@ -348,7 +348,22 @@ Using a python list with a set capacity is very similar to creating a python lis
 
 ## Problem
 
-Food storage, which holds food storage for the Bishop Storehouse.  The food storage works strictly on "first in, first out" basis. People must use the oldest food based on arrival date of all food at the storehouse, or they can select whether they want bagged food or canned food and will receive the oldest food of that type. They cannot select which specific food they would like. Create a data structure to maintain this system and implement the operation such as enqueue, dequeueAny, dequeueBagged, dequeueCanned.
+Food storage, which holds food storage for the Bishop Storehouse.  The food storage works strictly on "first in, first out" basis. People must use the oldest food based on arrival date of all food at the storehouse, or they can select whether they want bagged food or canned food and will receive the oldest food of that type. They cannot select which specific food they would like. Initialize a data structure to maintain this system and implement the operation such as enqueue, dequeueAny, dequeueBagged, dequeueCanned.
+
+### Before Coding
+
+- List test cases and their answers
+- Consider the problems.
+- Evaluate your code against all test cases
+- Do not Rush to Code
+- Make code simple and short code
+- Sketch everything on paper first
+- Draw out sketches
+- Pick out clear names
+- Reuse code 
+- In algorithm make sure you handle all run time errors in logic
+- Verifying against null nodes
+- Data integrity 
 
 You can check your code with the solution here: [Solution](1-topic-solution.py)
 
