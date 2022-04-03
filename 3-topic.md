@@ -66,16 +66,7 @@ We found a sibling in our family history tree and we need to add it to the corre
 - Pick out clear names
 - Reuse code
 - In the algorithm, make sure you handle all run time errors in logic
-- Verifying against null nodes
-- Data integrity
-  - What is your data? Head, Tail, length
-    - Head and tail should be null or none if empty
-    - Length must be the length of the items
-  - Write a function that verifies a linked list is correct
-    - if self.length == 0; assert self.head is none same for tail then return
-    - check to assert self.tail.next is none
-    - If self.length is equal to 1, assert head to equal tail
-    - if self.length is equal to 2 assert head.next to equal tail
+
 
 ### Solve
 
