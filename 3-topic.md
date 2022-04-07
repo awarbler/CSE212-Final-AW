@@ -1,11 +1,21 @@
 # Binary Tree
 
 A binary tree is a type of data structure that is nonlinear with a hierarchical relationship between elements without having a cycle. It is connected with edges.
-A binary tree can be used in a café situation in a real-life case. On the menu, drinks are separated into hot beverages and cold beverages.
+A binary tree can be used in a café situation in a real-life case. On the menu, drinks are separated into hot beverages and cold beverages. Binary trees have nodes and each not has two children. There are left or right children in the tree. 
 
 ## Purpose
 
-Binary trees are easier and quicker to access data.
+Binary trees are easier and quicker to access data. Binary trees are used to parse problems. 
+
+## Types
+
+|     Term    |     Definition    |
+|---|---|
+|    Full Binary Tree    |    Zero or two children     |
+|     Perfect Binary Tree    |    All nodes have two children and all leafs are located on the same level    |
+|     Complete Binary Tree   |     One node root, next level has two nodes, next level has four nodes    |
+|     Balanced Binary Tree    |     Remove a node from the list.         |
+
 
 ## Terminology
 
@@ -21,6 +31,8 @@ Table 1.2 explains the basic definitions for Linked List
 |     Sibling  |   Is the children of the same parent  |
 |     Depth  |   The length of the path of the root to the node  |
 |     Height  |   The length of the path from the root to the deepest node   |
+
+
 
 ## Operations
 
@@ -52,7 +64,8 @@ Table 1.2 explains the basic definitions for Linked List
 
 ## Problem
 
-We found a sibling in our family history tree and we need to add it to the correct parents.
+In our family history class we need to find the first common ancestor. Use a binary tree to find it. Avoid storing any additonal nodes in a data structure. 
+
 
 ### Before Coding
 
@@ -69,8 +82,6 @@ We found a sibling in our family history tree and we need to add it to the corre
 
 
 ### Solve
-
-Our music on our iPod will not play the previous song.
 
 You can check your code with the solution here: [Solution](2-topic-solution.py)
 

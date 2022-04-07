@@ -348,7 +348,7 @@ Using a python list with a set capacity is very similar to creating a python lis
 
 ## Problem
 
-Food storage, which holds food storage for the Bishop Storehouse.  The food storage works strictly on "first in, first out" basis. People must use the oldest food based on arrival date of all food at the storehouse, or they can select whether they want bagged food or canned food and will receive the oldest food of that type. They cannot select which specific food they would like. Initialize a data structure to maintain this system and implement the operation such as enqueue, dequeueAny, dequeueBagged, dequeueCanned.
+The Bishops storehouse hold canned and bagged food.  The food storage works strictly on "first in, first out" basis. People must use the food based on  arrival of all food at the storehouse, or they can select whether they want bagged food or canned food and will receive the oldest food of that type. They cannot select which specific food they would like. Initialize a data structure to maintain this system and implement the operation such as enqueue, dequeueAny, dequeueBagged, dequeueCanned.
 
 ### Before Coding
 
