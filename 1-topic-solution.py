@@ -13,31 +13,50 @@ from unittest import result
 
 
 class BishopStore():
+    """
+    Implement a queue 
+    """
+    
     def __init__(self) :
+        """
+        Create empty queues to hold the data
+        """
         self.cannedFood = []
         self.baggedFood = []
-    # create a enqueue to add canned food and bagged food to the store 
+    
     def enqueue(self, food, type):
+        """
+        Add an item to the queue adding value and type to the parameter
+        """
         if type == 'canned':
             self.cannedFood.append(food)
         else:
             self.baggedFood.append(food)
-    # create a dequeue for canned and bagged food
+    
     def dequeueBagged(self):
+        """
+        Remove bagged food from the queue and check if empty 
+        """
         if len(self.baggedFood)== 0:
             return None
         else:
             bagged = self.baggedFood.pop(0)
         return bagged
     def dequeueCanned(self):
+        """
+        remove canned food from the queue and check if empty 
+        """
         if len(self.cannedFood)== 0:
             return None
         else:
             canned = self.cannedFood.pop(0)
         return canned
+        
     def dequeueAny(self):
         if len(self.cannedFood) == 0:
             anyFood = self.cannedFood.pop(0)
         else:
             anyFood= self.baggedFood.pop(0)
         return anyFood
+
+    
