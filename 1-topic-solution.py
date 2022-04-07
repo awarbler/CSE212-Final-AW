@@ -9,7 +9,6 @@
 # and implement the operation such as enqueue, dequeueAny, dequeueBagged, dequeueCanned.
 
 # Create a data structure to maintain the system
-from unittest import result
 
 
 class BishopStore():
