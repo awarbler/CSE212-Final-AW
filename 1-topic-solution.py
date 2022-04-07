@@ -1,4 +1,4 @@
-## Problem
+## Solution 
 
 #The Bishops storehouse hold canned and bagged food.  
 # The food storage works strictly on "first in, first out" basis. 
@@ -53,9 +53,27 @@ class BishopStore():
         
     def dequeueAny(self):
         if len(self.cannedFood) == 0:
-            anyFood = self.cannedFood.pop(0)
+            anyFood = self.baggedFood.pop(0)
         else:
             anyFood= self.baggedFood.pop(0)
         return anyFood
 
+#testing
+foodQueue = BishopStore()
+foodQueue.enqueue('Can1', 'Can')
+foodQueue.enqueue('Can2', 'Can')
+foodQueue.enqueue('bag1', 'bag')
+foodQueue.enqueue('Can3', 'Can')
+foodQueue.enqueue('bag2', 'bag')
+foodQueue.enqueue('bag3', 'bag')
+foodQueue.enqueue('bag4', 'bag')
+foodQueue.enqueue('bag5', 'bag')
+foodQueue.enqueue('bag6', 'bag')
+foodQueue.enqueue('bag7', 'bag')
+foodQueue.enqueue('Can5', 'Can')
+foodQueue.enqueue('Can6', 'Can')
+foodQueue.enqueue('Can7', 'Can')
+foodQueue.enqueue('Can8', 'Can')
+print(foodQueue)
+print(foodQueue.dequeueAny())
     
