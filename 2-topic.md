@@ -57,7 +57,7 @@ Table 1.2 explains the basic definitions for Linked List
 ### Linked list
 
 Initialize a linked list
-    - Initialize a class inked list(parameter of self)
+    - Initialize a class linked list(parameter of self)
     - Initialize/ initialize head and tail
     - Initialize a node
     - Initialize a pointer - this Initializes a link between the first Node and head.

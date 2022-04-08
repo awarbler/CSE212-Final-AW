@@ -105,6 +105,13 @@ class Playlist():
         # return temp use temp.value for testing
         return temp.value
 
+    def setValue(self, pointer, value):
+        temp = self.get(pointer)
+        if temp:
+            temp.value = value
+            return True
+        return False
+
 #Test
 print("New linked list")
 song = Playlist(2)
@@ -150,6 +157,9 @@ song.print()
 print(song.remove(2))
 print("added remove and now printing list")
 song.print()
+song.setValue(1,4)
+print("added setValueand now printing list")
+
 
         
 
