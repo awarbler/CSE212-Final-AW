@@ -12,10 +12,11 @@ There are four types of queues Simple Queue, Circular Queues, Priority Queues, a
 
 |     Type    |     Description     |
 |:---|:---|
-|     Simple Queue    |     Insert in the rear removal in the front. May be set to have a capacity.    |
 |     Circular Queue    |     The last element points to the first element making a circle. A circular queue has a capacity—a circular queue, otherwise known as a linked list.    |
-|     Priority Queue    |     Each element is associated with a priority and served by its priority.May be set to have a capacity.   |
 |     Double Queue    |     Insert and remove may occur from either the front or last. May be set to have a capacity.   |
+|     Priority Queue    |     Each element is associated with a priority and served by its priority.May be set to have a capacity.   |
+|     Simple Queue    |     Insert in the rear removal in the front. May be set to have a capacity.    |
+
 
 Queues may also use python lists or linked lists. Using a linked list will work best if we set a queue with a capacity that is a circular queue. A python list without a set capacity is a single query it is a really slow process. This tutorial will use a simple queue using a python list FIFO.
 
@@ -26,8 +27,8 @@ Table 1.2 explains the basic definitions for data structure and queues.
 |     Term    |     Definition    |
 |---|---|
 |     back    |     The location an enqueue takes place. All enqueues occur at the end of the last item in the queue.      |
-|     front    |     The front is the location where a dequeue takes place. All dequeues occur at the beginning of the first item in the queue.     |
 |     Big O notation    |     Big O notation is an algorithm that calculates run-time complexities. Here are the most used complexities.    |
+|     front    |     The front is the location where a dequeue takes place. All dequeues occur at the beginning of the first item in the queue.     |
 |     O(1)    |     Constant - Accessing a specific element or location    |
 |     O(N)    |     Linear Loop through an element or grow in direction, the larger the input, the greater amount of time it takes, traverse through every   item    |
 |     O(LogN)    |     Logarithmic -Find an element proportionally to the logarithm of the input size. The function does not pass through or search every item in the queue. Tend to be used in binary search, searching uses compare functions. Each step we tend to divide by two the total time is divided by 2    |
@@ -40,13 +41,13 @@ Queue modules implement multiproduct, multicomputer queues. In table 2, are the 
 
 |     Method    |     Description    |     Example    |     Notation    |
 |---|---|---|---|
-|     Enqueue()    |     Inserts data into a queue. It cannot insert data elements in the middle of a python list. Instead, each element is behind one another added at the back of the queue.    |     queue.Enqueue(25) or     queue.append(value)    |     O(1) – order of 1, remains constant, access a specific element    |
+|     Delete()    |     The delete function allows us to delete the entire queue    |     queue.isEmpty()    |     O(1) – order of 1, remains constant, access a specific element    |
 |     Dequeue()    |     Deletes data from a queue. If there is only one element, the list will be empty. Deletes from the front of the queue.     |     queue.Dequeue() or value = queue.pop(0)    |     O(1) – order of 1, remains constant, access a specific element    |
+|     Enqueue()    |     Inserts data into a queue. It cannot insert data elements in the middle of a python list. Instead, each element is behind one another added at the back of the queue.    |     queue.Enqueue(25) or     queue.append(value)    |     O(1) – order of 1, remains constant, access a specific element    |
+|     Front()    |     Returns the front item from the queue    |     queue.Front()    |     O(1) – order of 1, remains constant, access a specific element    |
 |     isEmpty()    |     Checks if there is an element in a queue or if it is empty. It will return either true or false.     |     queue.isEmpty()    |     O(1) – order of 1, remains constant, access a specific element    |
 |     isFull()    |     These are used in circular queues. If a queue is set, isFull will check if the capacity is full. If it isFull(), we cannot add it to the queue     |     queue.isFull()    |     O(1) – order of 1, remains constant, access a specific element    |
-|     Front()    |     Returns the front item from the queue    |     queue.Front()    |     O(1) – order of 1, remains constant, access a specific element    |
 |     Rear()    |     Returns the back item from the queue.    |     queue.Rear()    |     O(1) – order of 1, remains constant, access a specific element    |
-|     Delete()    |     The delete function allows us to delete the entire queue    |     queue.isEmpty()    |     O(1) – order of 1, remains constant, access a specific element    |
 |     Size()    |     Checks the size of the queue    |     len(queue) == size    |     O(1) – order of 1, remains constant, access a specific element    |
 
 ## Example Queue without Capacity

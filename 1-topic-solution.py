@@ -76,4 +76,3 @@ foodQueue.enqueue('Can7', 'Can')
 foodQueue.enqueue('Can8', 'Can')
 print(foodQueue)
 print(foodQueue.dequeueAny())
-    
