@@ -11,10 +11,11 @@ Binary trees are easier and quicker to access data. Binary trees are used to par
 
 |     Term    |     Definition    |
 |---|---|
-|    Full Binary Tree    |    Zero or two children     |
-|     Perfect Binary Tree    |    All nodes have two children and all leafs are located on the same level    |
-|     Complete Binary Tree   |     One node root, next level has two nodes, next level has four nodes    |
-|     Balanced Binary Tree    |     Remove a node from the list.         |
+|    Full Binary Tree    |    Points to zero nodes or the max of two nodes     |
+|    Perfect Binary Tree    |    All nodes have two children and all leafs are located on the same level    |
+|    Complete Binary Tree   |    Filling tree from left to right with no gaps  |
+|    Balanced Binary Tree    |     Remove a node from the list.         |
+|    Binary Search Tree    |     Nodes are compared to the root and sort by less or greater          |
 
 
 ## Terminology
@@ -23,12 +24,13 @@ Table 1.2 explains the basic definitions for Linked List
 |     Term    |     Definition    |
 |---|---|
 |     Base category    |  It is the first category   |
+|     Nodes  |  Point at other nodes   |
 |     Child Node    |    It is under the parent node   |
 |     Edge    |    It is the link between the parent and the child   |
 |     Leaf   |    Is a node that does not have a child   |
 |     Parent Node    |     It is the first node in a subcategory  |
 |     Root Node    |     The first Node does not have a parent |
-|     Sibling  |   Is the children of the same parent  |
+|     Sibling  |   Is the children of the same parent, a sibling can only have one parent |
 |     Depth  |   The length of the path of the root to the node  |
 |     Height  |   The length of the path from the root to the deepest node   |
 

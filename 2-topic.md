@@ -254,7 +254,7 @@ Initialize a class for nodes
                 return self.pop()
             # remove from the middle 
             # set previous 
-            previous = self.get(index -1)
+            previous = self.get(pointer -1)
             # set temp to previous next 
             temp = previous.next
             # remove link by setting to none
@@ -369,6 +369,8 @@ linkedList.print_list()
 
 ## Problem
 
+Add songs to your playlist 
+
 ### Before Coding
 
 - List test cases and their answers
@@ -393,8 +395,6 @@ linkedList.print_list()
     - if self.length is equal to 2 assert head.next to equal tail
 
 ### Solve
-
-Our music on our iPod will not play the previous song.
 
 You can check your code with the solution here: [Solution](2-topic-solution.py)
 
